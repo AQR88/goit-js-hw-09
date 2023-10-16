@@ -23,3 +23,7 @@ img {
   color: rgb(172, 147, 5);
 text-decoration: underline;
 }
+.timer{
+  display: flex;
+  column-gap: 20px;
+}
