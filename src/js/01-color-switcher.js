@@ -25,4 +25,3 @@ function stopHandler() {
   startBtn.removeAttribute.disabled = true;
   stoptBtn.setAttribute.disabled = true;
   clearInterval(timer);
-}
