@@ -43,26 +43,26 @@ const options = {
 
 
 const timer = {
-  selector: document.querySelector('.timer'),
+  timerSelector: document.querySelector('.timer'),
   start() {
     intervalId = setInterval(() => {
       buttonEl.disabled = true;
       inputEl.disabled = true;
       currentDate = Date.now();
-      const differ = selectedDate - currentDate;
+      const diff = selectedDate - currentDate;
 
-      if (differ <= 0) {
+      if (diff <= 0) {
         this.stop();
         return;
       }
-      const { days, hours, minutes, seconds } = this.convertMs(differ);
-      this.selector.querySelector('[data-days]').textContent =
+      const { days, hours, minutes, seconds } = this.convertMs(diff);
+      this.timerSelector.querySelector('[data-days]').textContent =
         this.addLeadingZero(days);
-      this.selector.querySelector('[data-hours]').textContent =
+      this.timerSelector.querySelector('[data-hours]').textContent =
         this.addLeadingZero(hours);
-      this.selector.querySelector('[data-minutes]').textContent =
+      this.timerSelector.querySelector('[data-minutes]').textContent =
         this.addLeadingZero(minutes);
-      this.selector.querySelector('[data-seconds]').textContent =
+      this.timerSelector.querySelector('[data-seconds]').textContent =
         this.addLeadingZero(seconds);
     }, 1000);
   },
