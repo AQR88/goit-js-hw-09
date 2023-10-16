@@ -16,3 +16,10 @@ img {
   display: block;
   max-width: 100%;
 }
+.value{
+  color: orangered;
+}
+.label{
+  color: rgb(172, 147, 5);
+text-decoration: underline;
+}
