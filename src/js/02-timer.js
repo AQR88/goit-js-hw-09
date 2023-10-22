@@ -45,6 +45,7 @@ const startTimer = () =>{
   selectedDate = new Date(inputEl.value);
   timer.start();
 };
+
 buttonEl.addEventListener('click', startTimer);
 
 const timer = {
